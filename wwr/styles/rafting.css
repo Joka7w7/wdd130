@@ -379,3 +379,8 @@ footer p {
     margin-right: 1rem;
     font-weight: normal;
 }
+
+.radio-group,
+.checkbox-group {
+    margin-bottom: 1rem;
+}
