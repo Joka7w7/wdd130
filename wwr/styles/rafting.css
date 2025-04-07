@@ -372,3 +372,15 @@ footer p {
 .contact-form button:hover {
     background-color: var(--accent-color);
 }
+
+.radio-group label,
+.checkbox-group label {
+    display: inline-block;
+    margin-right: 1rem;
+    font-weight: normal;
+}
+
+.radio-group,
+.checkbox-group {
+    margin-bottom: 1rem;
+}

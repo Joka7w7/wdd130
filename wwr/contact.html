@@ -71,23 +71,35 @@
             <form action="#" method="post">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
-
+        
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email" required>
-
+        
                 <p>Purpose of Message:</p>
-                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label><br>
-
+                <div class="radio-group">
+                    <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                    <label for="purpose-general">General Inquiry</label><br>
+        
+                    <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                    <label for="purpose-reservation">Reservation Question</label><br>
+        
+                    <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion">
+                    <label for="purpose-suggestion">Website Suggestion</label><br>
+                </div>
+        
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
-
-                <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
-
+        
+                <div class="checkbox-group">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                </div>
+        
                 <button type="submit">Send Message</button>
             </form>
         </section>
+        
+
     </main>
     <footer>
         <p>©️2025 🌴 RaftRiders 🌴 Jose Chanax</p>
